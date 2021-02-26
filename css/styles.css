@@ -1,5 +1,6 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: white;
 }
 
 .centered-wrapper {
@@ -16,5 +17,100 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.right-aligned {
+  float: right;
+}
+
+.right-aligned a {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.right-aligned a span {
+  text-decoration: underline;
+}
+
+#recent-events-section {
+  margin-bottom: 100px;
+}
+
+#recent-events-section #recent-events-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#recent-events-section #recent-events-desc {
+  max-width: 80%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#recent-events-section .grid-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 40px;
+}
+
+#recent-events-section .event-card {
+  opacity: 80%;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#recent-events-section .event-card .card-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+#recent-events-section .event-card .card-desc {
+  font-weight: 400;
+}
+
+#recent-events-section #first-event-card {
+  background-color: #9A1919;
+  -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
+          box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
+}
+
+#recent-events-section #first-event-card div {
+  color: white;
+}
+
+#recent-events-section #first-event-card .card-date {
+  color: #FFE57D;
+}
+
+#recent-events-section #second-event-card {
+  background-color: #D4BC96;
+  -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
+          box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
+}
+
+#recent-events-section #second-event-card div {
+  color: black;
+}
+
+#recent-events-section #second-event-card .card-date {
+  color: #725C07;
+}
+
+#recent-events-section #third-event-card {
+  background-color: #000000;
+  -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
+          box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
+}
+
+#recent-events-section #third-event-card div {
+  color: white;
+}
+
+#recent-events-section #third-event-card .card-date {
+  color: #FFE57D;
 }
 /*# sourceMappingURL=styles.css.map */

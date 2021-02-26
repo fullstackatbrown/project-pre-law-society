@@ -1,5 +1,18 @@
+$font-primary: 'Inter', sans-serif;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+$custom-red: #9A1919;
+$custom-sand: #D4BC96;
+$custom-black: #000000;
+
+$site-background: white;
+
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: $font-primary;
+    background-color: $site-background;
 }
 
 .centered-wrapper {
@@ -14,3 +27,84 @@ body {
     justify-content: space-between;
 
 }
+
+.right-aligned {
+    float: right;
+    a {
+        font-weight: $font-medium;
+        font-size: 20px;
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
+#recent-events-section {
+    #recent-events-title {
+        font-weight: $font-bold;
+        font-size: 30px;
+    }
+    
+    #recent-events-desc {
+        max-width: 80%;
+        font-weight: $font-regular;
+        font-size: 16px;
+    }
+
+    .grid-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .event-card {
+        opacity: 80%;
+        padding: 20px;
+        font-weight: $font-semi-bold;
+        font-size: 16px;
+    
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    
+        .card-desc {
+            font-weight: $font-regular; 
+        }
+    }
+
+    #first-event-card {
+        background-color: $custom-red;
+        div {
+            color: white;
+        }
+        .card-date {
+            color: #FFE57D;
+        }
+        box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
+    }
+    #second-event-card {
+        background-color: $custom-sand;
+        div {
+            color: black;
+        }
+        .card-date {
+            color: #725C07;
+        }
+        box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
+    }
+    #third-event-card {
+        background-color: $custom-black;
+        div {
+            color: white;
+        }
+        .card-date {
+            color: #FFE57D;
+        }
+        box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
+    }
+
+    margin-bottom: 100px;
+}
+
