@@ -17,19 +17,122 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+}
+
+.arrow-link {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.arrow-link span {
+  text-decoration: underline;
 }
 
 .right-aligned {
   float: right;
 }
 
-.right-aligned a {
-  font-weight: 500;
+.event-card {
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.event-card .card-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.event-card .card-desc {
+  font-weight: 400;
+}
+
+#navbar {
+  border-style: hidden hidden solid hidden;
+  border-width: 1px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#navbar #navbar-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0 10px 0;
+}
+
+#navbar #navbar-flex #navbar-buttons-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+#navbar #navbar-flex #navbar-left-button button {
+  font-weight: 700;
+}
+
+#navbar #navbar-flex button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   font-size: 20px;
 }
 
-.right-aligned a span {
+#top-section {
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+#top-section #top-section-left {
+  max-width: 50%;
+}
+
+#top-section #top-section-left #top-section-text {
+  font-size: 24px;
+}
+
+#top-section #top-section-left #top-section-text span {
+  font-weight: 600;
   text-decoration: underline;
+}
+
+#top-section #featured-event-section {
+  margin-top: 50px;
+  width: 335px;
+}
+
+#top-section #featured-event-section img {
+  width: inherit;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+#top-section #featured-event-section #featured-event-card {
+  background-color: black;
+}
+
+#top-section #featured-event-section #featured-event-card div {
+  color: white;
+}
+
+#top-section #featured-event-section #featured-event-card .card-date {
+  color: #FFE57D;
 }
 
 #recent-events-section {
@@ -58,18 +161,6 @@ body {
 
 #recent-events-section .event-card {
   opacity: 80%;
-  padding: 20px;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-#recent-events-section .event-card .card-title {
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-
-#recent-events-section .event-card .card-desc {
-  font-weight: 400;
 }
 
 #recent-events-section #first-event-card {
