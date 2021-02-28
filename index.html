@@ -5,146 +5,170 @@
     <meta name="description" content="This is the content that will show up on Google">
     <!-- Site Title and CSS -->
     <title>Brown Pre-law Society</title>
+<<<<<<< HEAD
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+=======
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+>>>>>>> b3ce3d529bd73cac3179af220a985e05a046592c
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="centered-wrapper">
-        <div class="navbar">
-            <button class="navbar-link">Brown Pre-Law Society</button>
-            <button class="navbar-link">Home</button>
-            <button class="navbar-link">About Us</button>
-            <button class="navbar-link">Events</button>
-            <button class="navbar-link">Resources</button>
+        <div id="navbar">
+            <div id="navbar-flex">
+                <div id="navbar-left-button">
+                    <button class="navbar-link">Brown Pre-Law Society</button>
+                </div>
+                <div id="navbar-buttons-flex">
+                    <button class="navbar-link">Home</button>
+                    <button class="navbar-link">About Us</button>
+                    <button class="navbar-link">Events</button>
+                    <button class="navbar-link">Resources</button>
+                </div>
+            </div>
         </div>
 
-        <div class="flexbox-section">
-            <p>
-                We are a group of students, from diverse backgrounds, considering law school after graduation. 
-                We discuss the law and investigate the full implications of attending law school, as well as 
-                the many possibilities thereafter.<br>
-				<a>About Us</a>
+        <div id="top-section" class="flexbox-section">
+            <div id="top-section-left">
+                <p id="top-section-text">
+                    We are a group of students, from diverse backgrounds, considering <span>law school</span> after graduation. 
+                    We discuss the law and investigate the full implications of attending law school, as well as 
+                    the many possibilities thereafter.
+                </p>
+                <div class="arrow-link">
+                    <a><span>About Us</span> --></a>
+                </div>
+            </div>
+            
+            <div id="featured-event-section">
+                <img id="featured-event-image" src="images/upenn.jpg">
+                <div id="featured-event-card" class="event-card">
+                    <div class="card-upcoming-event">Upcoming Event</div>
+                    <div class="card-date">Feb. 29th 2021</div>
+                    <div class="card-title">University of Pennsylvania Carey Law School Info Session</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="recent-events-section">
+            <h1 id="recent-events-title">Recent Events</h1>
+            <p id="recent-events-desc">
+                Come talk to our seniors about why they chose the pre-law track, why they’re interested in law school,
+                what they want to do with their law degrees, and ask any questions you have!
             </p>
-            <div class="featured-event-card">
-                <img src="data:image/jpeg;base64,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">
-                <div class="card-upcoming-event">Upcoming Event</div>
-                <div class="card-date">Feb. 29th 2021</div>
-                <div class="card-title">University of Pennsylvania Carey Law School Info Session</div>
+
+            <div class="grid-row">
+                <div id="first-event-card" class="event-card">
+                    <div class="flexbox-section">
+                        <div class="card-upcoming-event">Upcoming Event</div>
+                        <img src="images/speech_bubbles.png" width="32" height="32">
+                    </div>
+                    
+                    <div class="card-date">Feb. 29th 2021</div>
+                    <div class="card-title">Pizza and Chat with Seniors!</div>
+                    <div class="card-desc">Come talk to our seniors about why they chose the pre-law track, 
+                        why they’re interested in law school, what they want to do with their law degrees, 
+                        and ask any questions you have!</div>
+                </div>
+                <div id="second-event-card" class="event-card">
+                    <div class="flexbox-section">
+                        <div class="card-upcoming-event">Upcoming Event</div>
+                        <img src="images/pizza.png" width="32" height="32">
+                    </div>
+                    
+                    <div class="card-date">Feb. 29th 2021</div>
+                    <div class="card-title">Dinner with Prof. Schiller</div>
+                    <div class="card-desc">Professor Schiller is the Chair of the Political Science Department here at Brown and will be discussing politics,
+                        answering questions, and talking about political life after Brown.</div>
+                </div>
+                <div id="third-event-card" class="event-card">
+                    <div class="flexbox-section">
+                        <div class="card-upcoming-event">Upcoming Event</div>
+                        <img src="images/books.png" width="32" height="32">
+                    </div>
+                    
+                    <div class="card-date">Feb. 29th 2021</div>
+                    <div class="card-title">Design Workshop on Figma</div>
+                    <div class="card-desc">Professor Schiller is the Chair of the Political Science Department here at Brown and will be discussing politics,
+                        answering questions, and talking about political life after Brown.</div>
+                </div>
+            </div>
+            <div class="right-aligned arrow-link">
+                <a><span>View All Events</span> --></a>
             </div>
         </div>
         
-        <h1>Recent Events</h1>
-        <p>
-            Come talk to our seniors about why they chose the pre-law track, why they’re interested in law school,
-            what they want to do with their law degrees, and ask any questions you have!
-        </p>
-
-        <div class="grid-row">
-            <div class="event-card">
-                <div class="flexbox-section">
-                    <div class="card-upcoming-event">Upcoming Event</div>
-                    <img src="https://lh3.googleusercontent.com/proxy/DqYkOq1yw9KUmeRPvdE4Fb5vkfMzu_KRhVoaotOa8hLamT3vmSJGLgeFiQU1N0zqjHxx6ODNOfhsLrH5kcq0H1DNTknNj-BVLIFoksvi7zLxIX0prpRReTKU" width="32" height="32">
+        <div id="leadership-section">
+            <h1>Leadership Team</h1>
+            <p>
+                Come talk to our seniors about why they chose the pre-law track, why they’re interested in law school,
+                what they want to do with their law degrees, and ask any questions you have!
+            </p>
+            <div class="grid-row">
+                <div class="member-card">
+                    <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
+                    <div class="card-name">
+                        Amber Lowery
+                    </div>
+                    <div class="card-italic-desc">
+                        ‘18, President
+                    </div>
                 </div>
-                
-                <div class="card-date">Feb. 29th 2021</div>
-                <div class="card-title">Pizza and Chat with Seniors!</div>
-                <div class="card-desc">Come talk to our seniors about why they chose the pre-law track, 
-                    why they’re interested in law school, what they want to do with their law degrees, 
-                    and ask any questions you have!</div>
-            </div>
-            <div class="event-card">
-                <div class="flexbox-section">
-                    <div class="card-upcoming-event">Upcoming Event</div>
-                    <img src="https://lh3.googleusercontent.com/proxy/DqYkOq1yw9KUmeRPvdE4Fb5vkfMzu_KRhVoaotOa8hLamT3vmSJGLgeFiQU1N0zqjHxx6ODNOfhsLrH5kcq0H1DNTknNj-BVLIFoksvi7zLxIX0prpRReTKU" width="32" height="32">
+                <div class="member-card">
+                    <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
+                    <div class="card-name">
+                        Amber Lowery
+                    </div>
+                    <div class="card-italic-desc">
+                        ‘18, President
+                    </div>
                 </div>
-                
-                <div class="card-date">Feb. 29th 2021</div>
-                <div class="card-title">Dinner with Prof. Schiller</div>
-                <div class="card-desc">Professor Schiller is the Chair of the Political Science Department here at Brown and will be discussing politics,
-                    answering questions, and talking about political life after Brown.</div>
-            </div>
-            <div class="event-card">
-                <div class="flexbox-section">
-                    <div class="card-upcoming-event">Upcoming Event</div>
-                    <img src="https://lh3.googleusercontent.com/proxy/DqYkOq1yw9KUmeRPvdE4Fb5vkfMzu_KRhVoaotOa8hLamT3vmSJGLgeFiQU1N0zqjHxx6ODNOfhsLrH5kcq0H1DNTknNj-BVLIFoksvi7zLxIX0prpRReTKU" width="32" height="32">
+                <div class="member-card">
+                    <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
+                    <div class="card-name">
+                        Amber Lowery
+                    </div>
+                    <div class="card-italic-desc">
+                        ‘18, President
+                    </div>
                 </div>
-                
-                <div class="card-date">Feb. 29th 2021</div>
-                <div class="card-title">Design Workshop on Figma</div>
-                <div class="card-desc">Professor Schiller is the Chair of the Political Science Department here at Brown and will be discussing politics,
-                    answering questions, and talking about political life after Brown.</div>
-            </div>
-        </div>
-        <div class="right-aligned">
-            <a>View All Events</a>
-        </div>
-        
-
-        <h1>Leadership Team</h1>
-        <p>
-            Come talk to our seniors about why they chose the pre-law track, why they’re interested in law school,
-            what they want to do with their law degrees, and ask any questions you have!
-        </p>
-
-        <div class="grid-row">
-            <div class="member-card">
-                <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
-                <div class="card-name">
-                    Amber Lowery
+                <div class="member-card">
+                    <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
+                    <div class="card-name">
+                        Amber Lowery
+                    </div>
+                    <div class="card-italic-desc">
+                        ‘18, President
+                    </div>
                 </div>
-                <div class="card-italic-desc">
-                    ‘18, President
+                <div class="member-card">
+                    <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
+                    <div class="card-name">
+                        Amber Lowery
+                    </div>
+                    <div class="card-italic-desc">
+                        ‘18, President
+                    </div>
                 </div>
-            </div>
-            <div class="member-card">
-                <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
-                <div class="card-name">
-                    Amber Lowery
-                </div>
-                <div class="card-italic-desc">
-                    ‘18, President
+                <div class="member-card">
+                    <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
+                    <div class="card-name">
+                        Amber Lowery
+                    </div>
+                    <div class="card-italic-desc">
+                        ‘18, President
+                    </div>
                 </div>
             </div>
-            <div class="member-card">
-                <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
-                <div class="card-name">
-                    Amber Lowery
-                </div>
-                <div class="card-italic-desc">
-                    ‘18, President
-                </div>
-            </div>
-            <div class="member-card">
-                <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
-                <div class="card-name">
-                    Amber Lowery
-                </div>
-                <div class="card-italic-desc">
-                    ‘18, President
-                </div>
-            </div>
-            <div class="member-card">
-                <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
-                <div class="card-name">
-                    Amber Lowery
-                </div>
-                <div class="card-italic-desc">
-                    ‘18, President
-                </div>
-            </div>
-            <div class="member-card">
-                <img src=https://i.pinimg.com/474x/e0/b9/a5/e0b9a5c25c89d4aa3933c7a27354f51a.jpg width="64" height="64">
-                <div class="card-name">
-                    Amber Lowery
-                </div>
-                <div class="card-italic-desc">
-                    ‘18, President
-                </div>
+            <div class="right-aligned arrow-link">
+                <a class="arrow-link"><span>Learn More</span> --></a>
             </div>
         </div>
 
+<<<<<<< HEAD
         <div class="flex-container">
             <div class = "flex-item-1">
             <div>
@@ -184,18 +208,52 @@
                     <span>
                     <div class="card-bold-desc">
                         Advice on Course Selection
+=======
+        <div class="leadership-section">
+            <div class="flexbox-section">
+                <div>
+                    <h1>Resources</h1>
+                    <p>Come talk to our seniors about why they chose the pre-law track, why they’re interested in law school,
+                        what they want to do with their law degrees, and ask any questions you have!</p>
+                </div>
+                <div id="resources-grid">
+                    <div class="resource-card">
+                        <div class="card-bold-desc">
+                            Navigating the Admission Process
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="card-bold-desc">
+                            Tackling the LSAT
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="card-bold-desc">
+                            Advice on Course Selection
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="card-bold-desc">
+                            Advice on Course Selection
+                        </div>
+>>>>>>> b3ce3d529bd73cac3179af220a985e05a046592c
                     </div>
                     </span>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
         
 
         
         
+=======
+>>>>>>> b3ce3d529bd73cac3179af220a985e05a046592c
 
         <div class="footer"></div>
     </div>
+
+
 </body>
 
 </html>
