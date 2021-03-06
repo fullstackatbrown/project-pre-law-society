@@ -268,11 +268,11 @@ img {max-width:100%;}
 .button {
   border: none;
   color: white;
-  padding: 16px 16px;
+  padding: 4px 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 2px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -281,11 +281,13 @@ img {max-width:100%;}
 .button1 {
   background-color: rgb(95, 142, 230); 
   color: black; 
+  width: 95px;
+  height: 25px;
 }
 
 .resource-button {
-  width: 180px;
-  height: 80px;
+  width: 240px;
+  height: 120px;
   border: none;
   color: white;
   padding: 16px 16px;
@@ -298,22 +300,22 @@ img {max-width:100%;}
   cursor: pointer;
 }
 
-.button2 {
+.resource-button2 {
   background-color: #F6AD3C;
   color: rgb(0, 0, 0); 
 }
 
-.button3 {
+.resource-button3 {
   background-color: #B9519E;
   color: rgb(255, 255, 255); 
 }
 
-.button4 {
+.resource-button4 {
   background-color: #00A899;
   color: rgb(255, 255, 255); 
 }
 
-.button5 {
+.resource-button5 {
   background-color: #E72327;
   color: rgb(255, 255, 255); 
 }
