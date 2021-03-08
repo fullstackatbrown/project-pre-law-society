@@ -31,8 +31,29 @@ body {
 .arrow-link {
     font-weight: $font-medium;
     font-size: 20px;
-    span {
-        text-decoration: underline;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    $link-hover-decoration: none;
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        width: 0;
+        bottom: -5px;
+        background: #000;
+        height: 2px;
+        transition-property: width;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    &:hover:after,
+    &:focus:after,
+    &:active:after {
+        left: 0;
+        right: auto;
+        width: 100%;
     }
 }
 
@@ -65,31 +86,13 @@ body {
     #navbar-flex {
         display: flex;
         justify-content: space-between;
-    
-        #navbar-buttons-flex {
-            display: flex;
-            justify-content: space-between;
-            width: 40%;
-        }
-    
-        #navbar-left-button {
-            button {
-                font-weight: $font-bold;
-            }
-        }
-    
-        button {
-            margin: 0;
-            padding: 0;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            text-align: center;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            font-size: 20px;
-        }
         padding: 30px 0 10px 0;
+    }
+
+    li {
+        &:hover {
+            font-weight: $font-bold;
+        }
     }
 }
 
@@ -100,10 +103,6 @@ body {
         max-width: 50%;
         #top-section-text {
             font-size: 24px;
-            span {
-                font-weight: $font-semi-bold;
-                text-decoration: underline;
-            }
         }
     }
     #featured-event-section {
@@ -148,6 +147,13 @@ body {
 
     .event-card {
         opacity: 80%;
+        &:hover {
+            box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
+            margin-left: 5px;
+            margin-right: -5px;
+            margin-top: -5px;
+            margin-bottom: 5px;
+        }
     }
 
     #first-event-card {
@@ -158,7 +164,6 @@ body {
         .card-date {
             color: #FFE57D;
         }
-        box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
     }
     #second-event-card {
         background-color: $custom-sand;
@@ -168,7 +173,6 @@ body {
         .card-date {
             color: #725C07;
         }
-        box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
     }
     #third-event-card {
         background-color: $custom-black;
@@ -178,7 +182,6 @@ body {
         .card-date {
             color: #FFE57D;
         }
-        box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
     }
 
     margin-bottom: 100px;
