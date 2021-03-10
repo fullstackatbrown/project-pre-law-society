@@ -15,6 +15,10 @@ body {
     background-color: $site-background;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .centered-wrapper {
     max-width: 1024px;
     width: 80vw;
@@ -35,7 +39,9 @@ body {
     position: relative;
     overflow: hidden;
     $link-hover-decoration: none;
+    text-decoration: none;
     &:after {
+        text-decoration: none;
         content: "";
         position: absolute;
         z-index: -1;
@@ -51,6 +57,7 @@ body {
     &:hover:after,
     &:focus:after,
     &:active:after {
+        text-decoration: none;
         left: 0;
         right: auto;
         width: 100%;
@@ -148,6 +155,7 @@ body {
     .event-card {
         opacity: 80%;
         &:hover {
+            transition: 0.3s;
             box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
             margin-left: 5px;
             margin-right: -5px;

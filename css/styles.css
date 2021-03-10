@@ -3,6 +3,10 @@ body {
   background-color: white;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .centered-wrapper {
   max-width: 1024px;
   width: 80vw;
@@ -26,9 +30,11 @@ body {
   display: inline;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .arrow-link:after {
+  text-decoration: none;
   content: "";
   position: absolute;
   z-index: -1;
@@ -46,6 +52,7 @@ body {
 }
 
 .arrow-link:hover:after, .arrow-link:focus:after, .arrow-link:active:after {
+  text-decoration: none;
   left: 0;
   right: auto;
   width: 100%;
@@ -159,6 +166,8 @@ body {
 }
 
 #recent-events-section .event-card:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
           box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
   margin-left: 5px;
