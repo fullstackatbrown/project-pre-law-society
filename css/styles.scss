@@ -104,6 +104,10 @@ a:hover {
         max-width: 50%;
         #top-section-text {
             font-size: 24px;
+            span {
+                text-decoration: underline;
+                font-weight: $font-semi-bold;
+            }
         }
     }
     #featured-event-section {
@@ -273,5 +277,37 @@ a:hover {
         bottom: 0;
         left: 0;
         padding: 10px;
+    }
+}
+
+#footer {
+    margin-top: 100px;
+    max-width: 100%;
+    background-color: black;
+    height: 250px;
+    padding: 30px;
+
+    #footer-left {
+        width: 40%;
+        color: white;
+        font-size: 24px;
+        font-weight: $font-bold;
+    }
+
+    #footer-right {
+        width: 40%;
+        #footer-links {
+            width: 100%;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 2rem;
+            a {
+                color: white;
+                font-size: 16px;
+                font-weight: $font-semi-bold;
+                text-align: left;
+            }
+        }
     }
 }
