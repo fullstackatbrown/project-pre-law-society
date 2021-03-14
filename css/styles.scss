@@ -38,29 +38,23 @@ a:hover {
     display: inline;
     position: relative;
     overflow: hidden;
-    $link-hover-decoration: none;
-    text-decoration: none;
-    &:after {
-        text-decoration: none;
-        content: "";
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        width: 0;
-        bottom: -5px;
-        background: #000;
-        height: 2px;
-        transition-property: width;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-    }
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
-        text-decoration: none;
-        left: 0;
-        right: auto;
-        width: 100%;
+    span {
+        display: inline-block;
+        &:after {
+            content: '';
+            width: 0;
+            right: 0;
+            height: 2px;
+            display: block;
+            background: black;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
+        &:hover:after,
+        &:focus:after,
+        &:active:after {
+            width: 100%;
+        }
     }
 }
 
@@ -113,7 +107,8 @@ a:hover {
         }
     }
     #featured-event-section {
-        margin-top: 50px;
+        $section-top-margin: 50px;
+        margin-top: $section-top-margin;
         width: 335px;
         img {
             width: inherit;
@@ -129,6 +124,15 @@ a:hover {
             .card-date {
                 color: #FFE57D;
             }
+        }
+        transition-duration: 0.3s;
+        &:hover {
+            transition-timing-function: ease;
+            box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
+            margin-left: 5px;
+            margin-right: -5px;
+            margin-top: $section-top-margin - 5px;
+            margin-bottom: 5px;
         }
     }
 }
@@ -154,8 +158,8 @@ a:hover {
 
     .event-card {
         opacity: 80%;
+        transition: 0.3s;
         &:hover {
-            transition: 0.3s;
             box-shadow: -5px 5px 0 0px $site-background, -5px 5px 0 2px #F6AD3C;
             margin-left: 5px;
             margin-right: -5px;
