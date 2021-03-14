@@ -4,7 +4,7 @@ body {
 }
 
 .centered-wrapper {
-  max-width: 1024px;
+  max-width: 1150px;
   width: 80vw;
   margin-right: auto;
   margin-left: auto;
@@ -204,133 +204,22 @@ body {
 #recent-events-section #third-event-card .card-date {
   color: #FFE57D;
 }
-/*# sourceMappingURL=styles.css.map */
 
-.grid-container {
+#leadership-section .grid-row {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: end
-  padding: 0px;
-  /*grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  background-color: rgba(100, 100, 100, 0.8);*/
-  grid-gap: 0px;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 40px;
 }
 
-/*.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  text-align: center;
-  position: relative
-}*/
-
-.resource-card {
-  background-color: rgba(255, 255, 255, 0.8);
-  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
-  text-align: left;
-  position: relative;
+#leadership-section .member-card .card-name {
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.flex-container {
-  display: flex;
-  /*background-color: rgb(160, 142, 142);*/
-  justify-content: flex-end;
-  position: relative;
+#leadership-section .member-card .card-italic-desc {
+  font-size: 14px;
 }
-
-.flex-item-1 {
-  flex-grow: 1;
-  order: 1;
-  background-color: rgb(255, 255, 255);
-  flex-basis:auto;
-}
-
-.flex-item-2 {
-  flex-grow: 3;
-  order: 2;
-  margin: 20px;
-  padding: 20px;
-  max-width: 40vw;
-  background-color: rgb(255, 255, 255);
-  flex-basis:auto;
-}
-
-.flex-item-3 {
-  order: 3;
-  margin: 10px;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  flex-basis:auto;
-}
-
-img {max-width:100%;}
-
-.button {
-  border: none;
-  color: white;
-  padding: 16px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button1 {
-  background-color: rgb(95, 142, 230); 
-  color: black; 
-}
-
-.resource-button {
-  width: 180px;
-  height: 80px;
-  border: none;
-  color: white;
-  padding: 16px 16px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  margin: 2px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button2 {
-  background-color: #F6AD3C;
-  color: rgb(0, 0, 0); 
-}
-
-.button3 {
-  background-color: #B9519E;
-  color: rgb(255, 255, 255); 
-}
-
-.button4 {
-  background-color: #00A899;
-  color: rgb(255, 255, 255); 
-}
-
-.button5 {
-  background-color: #E72327;
-  color: rgb(255, 255, 255); 
-}
-
-.resource-button:hover {
-  opacity: 0.8;
-  
-}
-
-.button1:hover {
-  background-color: #313872;
-  color: white;
-}
-
-.resource-card > span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-}
+/*# sourceMappingURL=styles.css.map */

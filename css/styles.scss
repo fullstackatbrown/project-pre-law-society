@@ -16,7 +16,7 @@ body {
 }
 
 .centered-wrapper {
-    max-width: 1024px;
+    max-width: 1150px;
     width: 80vw;
     margin-right: auto;
     margin-left: auto;
@@ -182,5 +182,23 @@ body {
     }
 
     margin-bottom: 100px;
+}
+
+#leadership-section {
+    .grid-row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 40px;
+    }
+    .member-card {
+        .card-name {
+            font-size: 15px;
+            font-weight: $font-semi-bold;
+        }
+        .card-italic-desc {
+            font-size: 14px;
+        }
+    }
 }
 
