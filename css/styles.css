@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: white;
@@ -26,7 +30,7 @@ a:hover {
 
 .arrow-link {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: inline;
   position: relative;
   overflow: hidden;
@@ -60,11 +64,11 @@ a:hover {
 .event-card {
   padding: 20px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .event-card .card-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 16px;
 }
 
@@ -72,16 +76,8 @@ a:hover {
   font-weight: 400;
 }
 
-.navbar-white .navbar-toggle .icon-bar {
-  color: black;
-  border-color: black;
-  background-color: black;
-}
-
 #navbar {
   border-style: hidden hidden solid hidden;
-  
-  font-size: 18px;
   border-width: 1px;
   margin: 0;
   padding: 0;
@@ -112,7 +108,7 @@ a:hover {
 }
 
 #top-section #top-section-left #top-section-text {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 #top-section #top-section-left #top-section-text span {
@@ -128,6 +124,8 @@ a:hover {
 }
 
 #top-section #featured-event-section img {
+  margin-bottom: -1px;
+  padding: 0;
   width: inherit;
   height: 170px;
   -o-object-fit: cover;
@@ -164,13 +162,13 @@ a:hover {
 
 #recent-events-section #recent-events-title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 #recent-events-section #recent-events-desc {
   max-width: 80%;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #recent-events-section .grid-row {
@@ -178,7 +176,7 @@ a:hover {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 32px;
   margin-bottom: 40px;
 }
 
@@ -239,38 +237,35 @@ a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  grid-gap: 2rem;
-  margin-bottom: 40px;
+  grid-gap: 32px;
+  margin-bottom: 100px;
 }
 
 #leadership-section .member-card .card-name {
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 600;
 }
 
 #leadership-section .member-card .card-italic-desc {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 #leadership-section #leadership-desc {
   max-width: 80%;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
-#resources-section {
-  margin-top: 100px;
-}
-
 #resources-section #resources-left {
-  max-width: 40%;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #resources-section .grid-container {
-  max-width: 50%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  padding: 0px;
+  padding: 0;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 10px;
@@ -291,7 +286,7 @@ a:hover {
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 2px 2px;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -357,12 +352,12 @@ a:hover {
           justify-content: space-between;
   -ms-grid-columns: (100px)[3];
       grid-template-columns: repeat(3, 100px);
-  grid-gap: 2rem;
+  grid-gap: 32px;
 }
 
 #footer #footer-right #footer-links a {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   text-align: left;
 }

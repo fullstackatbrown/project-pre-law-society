@@ -10,6 +10,10 @@ $custom-black: #000000;
 
 $site-background: white;
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: $font-primary;
     background-color: $site-background;
@@ -34,7 +38,7 @@ a:hover {
 
 .arrow-link {
     font-weight: $font-medium;
-    font-size: 20px;
+    font-size: 1.25rem;
     display: inline;
     position: relative;
     overflow: hidden;
@@ -65,10 +69,10 @@ a:hover {
 .event-card {
     padding: 20px;
     font-weight: $font-semi-bold;
-    font-size: 16px;
+    font-size: 1rem;
 
     .card-title {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 16px;
     }
 
@@ -103,7 +107,7 @@ a:hover {
     #top-section-left {
         max-width: 50%;
         #top-section-text {
-            font-size: 24px;
+            font-size: 1.5rem;
             span {
                 text-decoration: underline;
                 font-weight: $font-semi-bold;
@@ -115,6 +119,8 @@ a:hover {
         margin-top: $section-top-margin;
         width: 335px;
         img {
+            margin-bottom: -1px;
+            padding: 0;
             width: inherit;
             height: 170px;
             object-fit: cover;
@@ -144,19 +150,19 @@ a:hover {
 #recent-events-section {
     #recent-events-title {
         font-weight: $font-bold;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     
     #recent-events-desc {
         max-width: 80%;
         font-weight: $font-regular;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .grid-row {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 2rem;
+        grid-gap: 32px;
         margin-bottom: 40px;
     }
 
@@ -208,37 +214,36 @@ a:hover {
     .grid-row {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-gap: 2rem;
-        margin-bottom: 40px;
+        grid-gap: 32px;
+        margin-bottom: 100px;
     }
     .member-card {
         .card-name {
-            font-size: 15px;
+            font-size: 0.938rem;
             font-weight: $font-semi-bold;
         }
         .card-italic-desc {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
     }
 
     #leadership-desc {
         max-width: 80%;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: $font-regular;
     }
 }
 
 #resources-section {
-    margin-top: 100px;
-
     #resources-left {
-        max-width: 40%;
+        font-size: 1rem;
+        font-weight: $font-regular;
     }
 
     .grid-container {
-        max-width: 50%;
+        width: 100%;
         display: grid;
-        padding: 0px;
+        padding: 0;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-gap: 10px;
     }
@@ -258,7 +263,7 @@ a:hover {
         text-align: left;
         text-decoration: none;
         display: inline-block;
-        font-size: 18px;
+        font-size: 1.125rem;
         margin: 2px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
@@ -317,10 +322,10 @@ a:hover {
             display: grid;
             justify-content: space-between;
             grid-template-columns: repeat(3, 100px);
-            grid-gap: 2rem;
+            grid-gap: 32px;
             a {
                 color: white;
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: $font-semi-bold;
                 text-align: left;
             }
