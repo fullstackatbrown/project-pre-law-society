@@ -154,9 +154,10 @@ a:hover {
     }
     
     #recent-events-desc {
-        max-width: 80%;
+        max-width: 70%;
         font-weight: $font-regular;
         font-size: 1rem;
+        padding-bottom: 10px;
     }
 
     .grid-row {
@@ -206,8 +207,6 @@ a:hover {
             color: #FFE57D;
         }
     }
-
-    margin-bottom: 100px;
 }
 
 #leadership-section {
@@ -215,7 +214,7 @@ a:hover {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 32px;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
     .member-card {
         .card-name {
@@ -228,31 +227,39 @@ a:hover {
     }
 
     #leadership-desc {
-        max-width: 80%;
+        max-width: 70%;
         font-size: 1rem;
         font-weight: $font-regular;
+        padding-bottom: 10px;
     }
 }
 
 #resources-section {
+    margin-top: 100px;
+
     #resources-left {
+        width: 70%;
         font-size: 1rem;
         font-weight: $font-regular;
+    }
+
+    #resources-divider {
+        width: 30%;
     }
 
     .grid-container {
         width: 100%;
         display: grid;
         padding: 0;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
     }
 
     .resource-card {
-        background-color: rgba(255, 255, 255, 0.8);
         text-align: left;
         position: relative;
         font-weight: $font-bold;
+        font-size: 1rem;
         height: 150px;
       }
 
@@ -263,7 +270,6 @@ a:hover {
         text-align: left;
         text-decoration: none;
         display: inline-block;
-        font-size: 1.125rem;
         margin: 2px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
@@ -303,13 +309,13 @@ a:hover {
 
 #footer {
     margin-top: 100px;
-    max-width: 100%;
+    width: 100%;
     background-color: black;
     height: 250px;
     padding: 30px;
 
     #footer-left {
-        width: 40%;
+        width: auto;
         color: white;
         font-size: 24px;
         font-weight: $font-bold;
