@@ -11,6 +11,56 @@ a:hover {
   text-decoration: none;
 }
 
+.custom-navbar {
+  margin-top: 30px;
+  height: 10px;
+}
+
+a.navbar-brand {
+  padding-bottom: 0;
+  font-weight: 700;
+}
+
+a.navbar-brand:hover {
+  color: rgba(0, 0, 0, 0.658);
+}
+
+.navbar {
+  min-height: 45px;
+}
+
+.nav > li > a {
+  padding-bottom: 0;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding-right: 0;
+}
+
+.nav > li > a:hover {
+  background-color: white;
+  font-weight: 500;
+}
+
+.navbar-item-1:hover {
+  color: #F6AD3C;
+}
+
+.navbar-item-2:hover {
+  color: #B9519E;
+}
+
+.navbar-item-3:hover {
+  color: #00A899;
+}
+
+.navbar-item-4:hover {
+  color: #E72327;
+}
+
+#myNavbar.collapse.navbar-collapse {
+  padding-bottom: 0;
+}
+
 .centered-wrapper {
   max-width: 1150px;
   width: 80vw;
@@ -34,6 +84,7 @@ a:hover {
   display: inline;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .arrow-link span {
@@ -41,7 +92,7 @@ a:hover {
 }
 
 .arrow-link span:after {
-  content: '';
+  content: "";
   width: 0;
   right: 0;
   height: 2px;
@@ -61,18 +112,18 @@ a:hover {
   float: right;
 }
 
-.event-card {
+.event-card-content {
   padding: 20px;
   font-weight: 600;
   font-size: 1rem;
 }
 
-.event-card .card-title {
+.event-card-content .card-title {
   font-size: 1.25rem;
   margin-bottom: 16px;
 }
 
-.event-card .card-desc {
+.event-card-content .card-desc {
   font-weight: 400;
 }
 
@@ -81,7 +132,6 @@ a:hover {
   border-width: 1px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
 }
 
 #navbar #navbar-flex {
@@ -94,26 +144,25 @@ a:hover {
   padding: 30px 0 10px 0;
 }
 
-#navbar li:hover {
-  font-weight: 700;
-}
-
 #top-section {
   max-width: 100%;
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 #top-section #top-section-left {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 #top-section #top-section-left #top-section-text {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
 #top-section #top-section-left #top-section-text span {
+  font-weight: 700;
   text-decoration: underline;
-  font-weight: 600;
 }
 
 #top-section #featured-event-section {
@@ -142,14 +191,14 @@ a:hover {
 }
 
 #top-section #featured-event-section #featured-event-card .card-date {
-  color: #FFE57D;
+  color: #ffe57d;
 }
 
 #top-section #featured-event-section:hover {
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
-  -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
-          box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
+  -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #f6ad3c;
+          box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #f6ad3c;
   margin-left: 5px;
   margin-right: -5px;
   margin-top: 45px;
@@ -178,23 +227,43 @@ a:hover {
 }
 
 #recent-events-section .event-card {
-  opacity: 80%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  cursor: pointer;
 }
 
-#recent-events-section .event-card:hover {
-  -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
-          box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #F6AD3C;
-  margin-left: 5px;
-  margin-right: -5px;
-  margin-top: -5px;
-  margin-bottom: 5px;
+#recent-events-section .event-card-background {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#recent-events-section .event-card-content {
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 25px;
+}
+
+#recent-events-section .event-card-content:hover {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 #recent-events-section #first-event-card {
-  background-color: #9A1919;
+  background-color: #be4e4e;
 }
 
 #recent-events-section #first-event-card div {
@@ -202,11 +271,15 @@ a:hover {
 }
 
 #recent-events-section #first-event-card .card-date {
-  color: #FFE57D;
+  color: #ffe57d;
+}
+
+#recent-events-section #first-event-card:hover {
+  background-color: #ce4f4fcc;
 }
 
 #recent-events-section #second-event-card {
-  background-color: #D4BC96;
+  background-color: #d4bc96;
 }
 
 #recent-events-section #second-event-card div {
@@ -214,7 +287,11 @@ a:hover {
 }
 
 #recent-events-section #second-event-card .card-date {
-  color: #725C07;
+  color: #725c07;
+}
+
+#recent-events-section #second-event-card:hover {
+  background-color: #ecd1a5cc;
 }
 
 #recent-events-section #third-event-card {
@@ -226,7 +303,11 @@ a:hover {
 }
 
 #recent-events-section #third-event-card .card-date {
-  color: #FFE57D;
+  color: #ffe57d;
+}
+
+#recent-events-section #third-event-card:hover {
+  background-color: #000000b0;
 }
 
 #leadership-section .grid-row {
@@ -300,22 +381,22 @@ a:hover {
 }
 
 #resources-section .resource-button2 {
-  background-color: #F6AD3C;
+  background-color: #f6ad3c;
   color: black;
 }
 
 #resources-section .resource-button3 {
-  background-color: #B9519E;
+  background-color: #b9519e;
   color: white;
 }
 
 #resources-section .resource-button4 {
-  background-color: #00A899;
+  background-color: #00a899;
   color: white;
 }
 
 #resources-section .resource-button5 {
-  background-color: #E72327;
+  background-color: #e72327;
   color: white;
 }
 
