@@ -11,14 +11,30 @@ a:hover {
   text-decoration: none;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
 .custom-navbar {
   margin-top: 30px;
   height: 10px;
+  background-color: white;
+  border-bottom: 2px solid #000000;
+}
+
+@media (max-width: 991px) {
+  .custom-navbar {
+    height: 60px;
+  }
 }
 
 a.navbar-brand {
   padding-bottom: 0;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 a.navbar-brand:hover {
@@ -29,36 +45,36 @@ a.navbar-brand:hover {
   min-height: 45px;
 }
 
-.nav > li > a {
+.nav-item {
+  background-color: white;
+}
+
+a.nav-link {
   padding-bottom: 0;
   font-size: 1.15rem;
   font-weight: 500;
   padding-right: 0;
+  margin-left: 10px;
 }
 
-.nav > li > a:hover {
-  background-color: white;
+a.nav-link:hover {
   font-weight: 500;
 }
 
 .navbar-item-1:hover {
-  color: #F6AD3C;
+  color: #F6AD3C !important;
 }
 
 .navbar-item-2:hover {
-  color: #B9519E;
+  color: #B9519E !important;
 }
 
 .navbar-item-3:hover {
-  color: #00A899;
+  color: #00A899 !important;
 }
 
 .navbar-item-4:hover {
-  color: #E72327;
-}
-
-#myNavbar.collapse.navbar-collapse {
-  padding-bottom: 0;
+  color: #E72327 !important;
 }
 
 .centered-wrapper {
@@ -80,10 +96,11 @@ a.navbar-brand:hover {
 
 .arrow-link {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   display: inline;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -157,7 +174,7 @@ a.navbar-brand:hover {
 #top-section #top-section-left #top-section-text {
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 2.1rem;
 }
 
 #top-section #top-section-left #top-section-text span {
