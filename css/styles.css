@@ -330,8 +330,8 @@ a.nav-link:hover {
 #leadership-section .grid-row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 32px;
   margin-bottom: 20px;
 }
