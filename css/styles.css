@@ -165,10 +165,30 @@ a.nav-link:hover {
   max-width: 100%;
   margin-bottom: 50px;
   margin-top: 30px;
+  height: 450px;
+  position: relative;
 }
 
 #top-section #top-section-left {
+  max-height: 450px;
   max-width: 60%;
+  position: absolute;
+  background-color: rgba(219, 220, 220, 0.37);
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+}
+
+#top-section #top-section-left #top-section-left-triangle {
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  color: white;
+  position: absolute;
+  border-top: 50px solid;
+  border-left: 50px solid transparent;
 }
 
 #top-section #top-section-left #top-section-text {
@@ -183,43 +203,45 @@ a.nav-link:hover {
 }
 
 #top-section #featured-event-section {
-  margin-top: 50px;
-  width: 335px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-#top-section #featured-event-section img {
-  margin-bottom: -1px;
-  padding: 0;
-  width: inherit;
-  height: 170px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-
-#top-section #featured-event-section #featured-event-card {
-  background-color: black;
-}
-
-#top-section #featured-event-section #featured-event-card div {
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 25px;
+  padding-right: 50px;
+  right: 0;
+  bottom: 0;
   color: white;
+  background-color: black;
+  max-width: 575px;
 }
 
-#top-section #featured-event-section #featured-event-card .card-date {
-  color: #ffe57d;
+#top-section #featured-event-section #featured-event-section-triangle {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid white;
+  border-left: 50px solid transparent;
 }
 
-#top-section #featured-event-section:hover {
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #f6ad3c;
-          box-shadow: -5px 5px 0 0px white, -5px 5px 0 2px #f6ad3c;
-  margin-left: 5px;
-  margin-right: -5px;
-  margin-top: 45px;
-  margin-bottom: 5px;
+#top-section #featured-event-section #featured-event-section-left .card-upcoming-event {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#top-section #featured-event-section #featured-event-section-left .card-date {
+  font-size: 0.8rem;
+}
+
+#top-section #featured-event-section #featured-event-section-right {
+  max-width: 70%;
+}
+
+#top-section #featured-event-section #featured-event-section-right .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 #recent-events-section #recent-events-title {
