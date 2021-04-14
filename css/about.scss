@@ -1,0 +1,54 @@
+@import "variables";
+
+#top-banner {
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+    #top-banner-left {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        font-weight: $font-bold;
+        white-space: nowrap;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    #top-banner-right {
+        position: relative;
+        background-color: rgba(219, 220, 220, 0.37);
+        padding-left: 20px;
+        padding-right: 5vw;
+        padding-top: 20px;
+        font-size: 1rem;
+        padding-bottom: 50px;
+        line-height: 24px;
+
+        #top-banner-right-triangle {
+			color: $site-background;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-bottom: 50px solid $site-background;
+			border-left: 50px solid transparent;
+		}
+    }
+}
+
+#leadership-section {
+    #leadership-title {
+		font-weight: $font-bold;
+		font-size: 1.9rem;
+	}
+
+	#leadership-desc {
+		max-width: 70%;
+		font-weight: 450;
+		line-height: 1.7rem;
+		font-size: 1.5rem;
+		padding-bottom: 10px;
+		font-family: 'Crimson Text', serif;
+	}
+}
