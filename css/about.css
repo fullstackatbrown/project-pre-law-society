@@ -49,4 +49,58 @@
   padding-bottom: 10px;
   font-family: 'Crimson Text', serif;
 }
+
+#leadership-cards {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 25px;
+}
+
+#leadership-cards img {
+  width: 365px;
+  height: 215px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-filter .5s ease-in-out;
+  transition: -webkit-filter .5s ease-in-out;
+  transition: filter .5s ease-in-out;
+  transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%);
+  /* FF 35+ */
+}
+
+#leadership-cards img:hover {
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */
+}
+
+#leadership-cards .leadership-name {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+
+#leadership-cards .leadership-position {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#leadership-cards .leadership-desc {
+  font-size: 1rem;
+}
+
+#leadership-cards .bolded {
+  font-weight: bold;
+}
 /*# sourceMappingURL=about.css.map */

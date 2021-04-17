@@ -52,3 +52,48 @@
 		font-family: 'Crimson Text', serif;
 	}
 }
+
+#leadership-cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 40px;
+    row-gap: 25px;
+
+    img {
+        width: 365px;
+        height: 215px;
+        object-fit: cover;
+        transition: filter .5s ease-in-out;
+        -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+        filter: grayscale(100%); /* FF 35+ */
+
+    }
+
+    img:hover {
+        -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+        filter: grayscale(0%); /* FF 35+ */
+    }
+
+    .leadership-name {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 1.15rem;
+        margin-bottom: 0;
+    }
+
+    .leadership-position {
+        font-size: 1rem;
+        font-style: italic;
+        margin-bottom: 10px;
+
+    }
+
+    .leadership-desc {
+        font-size: 1rem;
+    }
+
+    .bolded {
+        font-weight: bold;
+    }
+}

@@ -136,10 +136,14 @@ a.nav-link:hover {
 			grid-template-columns: repeat(3, 100px);
 			grid-gap: 32px;
 			a {
+				text-decoration: none;
 				color: white;
 				font-size: 1rem;
 				font-weight: $font-semi-bold;
 				text-align: left;
+			}
+			a:hover {
+				opacity: 0.3;
 			}
 		}
 	}
