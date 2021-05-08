@@ -97,3 +97,47 @@
         font-weight: bold;
     }
 }
+
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-top: 1px solid rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.accordion:hover {
+  /*background-color: #ccc;*/
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  
+}
+
+.active:after {
+  content: "\00D7";
+}
+
+.panel {
+  margin-top: 10px;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
