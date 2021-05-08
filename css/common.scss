@@ -148,3 +148,31 @@ a.nav-link:hover {
 		}
 	}
 }
+
+.arrow-link {
+	font-weight: $font-medium;
+	font-size: 1.3rem;
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	span {
+		display: inline-block;
+		&:after {
+			content: "";
+			width: 0;
+			right: 0;
+			height: 2px;
+			display: block;
+			background: black;
+			transition-duration: 0.3s;
+			transition-timing-function: ease-out;
+		}
+		&:hover:after,
+		&:focus:after,
+		&:active:after {
+			width: 100%;
+		}
+	}
+}
