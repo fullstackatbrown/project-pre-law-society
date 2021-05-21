@@ -69,7 +69,7 @@
             height: 250px;
             object-fit: cover;
             transition: filter .3s ease-in-out;
-            -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+            -webkit-filter: grayscale(50%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
             filter: grayscale(50%); /* FF 35+ */
 
         }

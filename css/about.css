@@ -74,7 +74,7 @@
   transition: -webkit-filter .3s ease-in-out;
   transition: filter .3s ease-in-out;
   transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(50%);
   /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(50%);
   /* FF 35+ */
