@@ -70,7 +70,7 @@
             object-fit: cover;
             transition: filter .3s ease-in-out;
             -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-            filter: grayscale(100%); /* FF 35+ */
+            filter: grayscale(50%); /* FF 35+ */
 
         }
 
@@ -123,7 +123,8 @@
     }
 
     #connect-left {
-        background-color: black;
+        background-image: url("/images/law.jpg");
+        background-position: center;
         color: white;
         .arrow-link {
             color: white;
@@ -148,34 +149,35 @@
         }
         padding-left: 2vw;
         padding-right: 5vw;
-        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 1);
 
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-    }
-
-    #connect-right {
-        padding-left: 2vw;
-        padding-right: 5vw;
-        box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
-
-
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     #connect-left:hover {
-        background-image: url("/images/law.jpg");
-        background-position: center;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
     }
 
-    #connect-right:hover {
+    #connect-right {
         background-image: url("/images/letter.jpg");
         background-position: center;
+        padding-left: 2vw;
+        padding-right: 5vw;
+        box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 1);
+
+
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    #connect-right:hover {
+        box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
     }
 }
 
