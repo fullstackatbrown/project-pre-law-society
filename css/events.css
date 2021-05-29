@@ -1,0 +1,238 @@
+#top-banner {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+#top-banner #top-banner-left {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+#top-banner #top-banner-right {
+  position: relative;
+  background-color: rgba(219, 220, 220, 0.37);
+  padding-left: 20px;
+  padding-right: 5vw;
+  padding-top: 20px;
+  font-size: 1rem;
+  padding-bottom: 50px;
+  line-height: 24px;
+}
+
+#top-banner #top-banner-right #top-banner-right-triangle {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid white;
+  border-left: 50px solid transparent;
+}
+
+#leadership-section {
+  margin-bottom: 80px;
+}
+
+#leadership-section #leadership-title {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+#leadership-section #leadership-desc {
+  max-width: 70%;
+  font-weight: 450;
+  line-height: 1.7rem;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  font-family: 'Crimson Text', serif;
+}
+
+#leadership-cards {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 25px;
+}
+
+#leadership-cards .leadership-card-content img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-filter .3s ease-in-out;
+  transition: -webkit-filter .3s ease-in-out;
+  transition: filter .3s ease-in-out;
+  transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  -webkit-filter: grayscale(50%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(50%);
+  /* FF 35+ */
+}
+
+#leadership-cards .leadership-card-content img:hover {
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */
+}
+
+#leadership-cards .leadership-card-content .leadership-name {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+
+#leadership-cards .leadership-card-content .leadership-position {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#leadership-cards .leadership-card-content .leadership-desc {
+  font-size: 1rem;
+}
+
+#leadership-cards .leadership-card-content .bolded {
+  font-weight: 700;
+}
+
+#connect-section {
+  border: 1px solid black;
+}
+
+#connect-section .connect-halve {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#connect-section .connect-halve .connect-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#connect-section .connect-halve .connect-body {
+  font-size: 1.25rem;
+  line-height: auto;
+  margin-bottom: 20px;
+}
+
+#connect-section #connect-left {
+  background-image: url("/images/law.jpg");
+  background-position: center;
+  color: white;
+  padding-left: 2vw;
+  padding-right: 5vw;
+  -webkit-box-shadow: inset 0 0 0 1000px black;
+          box-shadow: inset 0 0 0 1000px black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#connect-section #connect-left .arrow-link {
+  color: white;
+}
+
+#connect-section #connect-left .arrow-link span {
+  display: inline-block;
+}
+
+#connect-section #connect-left .arrow-link span:after {
+  content: "";
+  width: 0;
+  right: 0;
+  height: 2px;
+  display: block;
+  background: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+#connect-section #connect-left .arrow-link span:hover:after, #connect-section #connect-left .arrow-link span:focus:after, #connect-section #connect-left .arrow-link span:active:after {
+  width: 100%;
+}
+
+#connect-section #connect-left:hover {
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+#connect-section #connect-right {
+  background-image: url("/images/letter.jpg");
+  background-position: center;
+  padding-left: 2vw;
+  padding-right: 5vw;
+  -webkit-box-shadow: inset 0 0 0 1000px white;
+          box-shadow: inset 0 0 0 1000px white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#connect-section #connect-right:hover {
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
+          box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
+}
+
+.accordion {
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-top: 1px solid black;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.accordion:hover {
+  /*background-color: #ccc;*/
+  background-color: #000000;
+  color: white;
+}
+
+.accordion:after {
+  content: '\002B';
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion:hover:after {
+  color: white;
+}
+
+.click_active:after {
+  content: "\00D7";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+/*# sourceMappingURL=events.css.map */
