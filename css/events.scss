@@ -229,3 +229,73 @@
   transition: max-height 0.2s ease-out;
 
 }
+
+#events-top-section {
+    #events-top-section-title {
+        font-size: 1.5rem;
+        font-weight: $font-bold;
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    #events-top-section-banner {
+        #banner-left {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            #banner-image {
+                width: 100%;
+            }
+            #banner-left-triangle {
+                color: black;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 250px solid black;
+                border-left: 100px solid transparent;
+            }
+            
+        }
+
+        #banner-right {
+            background-color: black;
+            color: white;
+            width: 30%;
+            height: 250px;
+            margin: auto;
+            padding-top: 20px;
+            padding-right: 20px;
+
+            #banner-right-title {
+                font-weight: $font-bold;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                text-align: right;
+            }
+
+            #banner-right-when {
+                font-weight: $font-thin;
+                font-size: 1.25rem;
+                text-align: right;
+            }
+
+            #banner-right-where {
+                font-weight: $font-thin;
+                margin-bottom: 15px;
+                font-size: 1.25rem;
+                text-align: right;
+            }
+
+            #banner-right-desc {
+                font-weight: $font-thin;
+                font-size: 0.75rem;
+                text-align: right;
+            }
+        }
+
+
+    }
+}

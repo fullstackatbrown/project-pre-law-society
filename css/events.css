@@ -235,4 +235,69 @@
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
+
+#events-top-section #events-top-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+#events-top-section #events-top-section-banner #banner-left {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+#events-top-section #events-top-section-banner #banner-left #banner-image {
+  width: 100%;
+}
+
+#events-top-section #events-top-section-banner #banner-left #banner-left-triangle {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 250px solid black;
+  border-left: 100px solid transparent;
+}
+
+#events-top-section #events-top-section-banner #banner-right {
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: 250px;
+  margin: auto;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+#events-top-section #events-top-section-banner #banner-right #banner-right-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+#events-top-section #events-top-section-banner #banner-right #banner-right-when {
+  font-weight: 300;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+#events-top-section #events-top-section-banner #banner-right #banner-right-where {
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+#events-top-section #events-top-section-banner #banner-right #banner-right-desc {
+  font-weight: 300;
+  font-size: 0.75rem;
+  text-align: right;
+}
 /*# sourceMappingURL=events.css.map */
