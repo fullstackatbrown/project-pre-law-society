@@ -1,0 +1,16 @@
+#event-top-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#event-top-upper #event-top-left {
+  width: 50%;
+}
+
+#event-top-upper #event-top-right {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+/*# sourceMappingURL=event.css.map */
