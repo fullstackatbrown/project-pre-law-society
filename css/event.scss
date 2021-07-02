@@ -72,3 +72,52 @@
     }
 }
 
+#event-top-right {
+    width: 50%;
+    background-color: green;
+}
+
+#information-section {
+    display: flex;
+}
+
+#event-description-section {
+    width: 50%; 
+    padding-right: 10%;
+    font-size: 0.9rem;
+}
+
+#event-time-and-place-section {
+    width: 50%;
+    font-size: 0.8rem;
+}
+
+#event-desc-text {
+    padding-bottom: 5%;
+}
+
+#event-time-and-place-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+#event-date{
+    padding-bottom: 1%;
+}
+
+#event-time {
+    padding-bottom: 1%;
+}
+
+#event-place {
+    padding-bottom: 5%;
+}
+
+#calendar {
+    padding-bottom: 1%;
+}
+
+
+
+
