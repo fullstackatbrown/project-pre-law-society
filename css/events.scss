@@ -455,7 +455,18 @@
 	}
 }
 
+#footer {
+	height: 400px;
+}
+
 #footer-item {
 	color: white;
 	font-size: 12px;
+}
+
+#footer-left {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
