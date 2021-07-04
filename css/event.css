@@ -1,16 +1,123 @@
 #event-top-upper {
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#event-top-left {
+#event-top-upper #event-top-left {
   width: 50%;
-  color: green;
+  position: relative;
+}
+
+#event-top-upper #event-top-left #event-title {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 150px;
+  width: 60%;
+  position: absolute;
+  z-index: 10;
+}
+
+#event-top-upper #event-top-left #event-title #event-date {
+  color: #FFE57D;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#event-top-upper #event-top-left #left-triangle {
+  left: 60%;
+  top: 0;
+  color: black;
+  position: absolute;
+  border-bottom: 150px solid;
+  border-right: 150px solid transparent;
+  z-index: 10;
+}
+
+#event-top-upper #event-see-more {
+  position: relative;
+  background-color: rgba(219, 220, 220, 0.5);
+  color: black;
+  margin-top: 150px;
+  width: 60%;
+  float: right;
+  text-align: right;
+  height: 150px;
+  margin-top: 100px;
+  padding-top: 80px;
+  padding-right: 30px;
+}
+
+#event-top-upper #event-see-more #right-triangle {
+  left: -150px;
+  top: 0;
+  color: rgba(219, 220, 220, 0.5);
+  position: absolute;
+  border-top: 150px solid;
+  border-left: 150px solid transparent;
+}
+
+#event-top-upper #event-top-right {
+  width: 50%;
+}
+
+#event-top-upper #event-top-right #event-image {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
 #event-top-right {
   width: 50%;
   background-color: green;
+}
+
+#information-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#event-description-section {
+  width: 50%;
+  padding-right: 10%;
+  font-size: 0.9rem;
+}
+
+#event-time-and-place-section {
+  width: 50%;
+  font-size: 0.8rem;
+}
+
+#event-desc-text {
+  padding-bottom: 5%;
+}
+
+#event-time-and-place-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+
+#event-date {
+  padding-bottom: 1%;
+}
+
+#event-time {
+  padding-bottom: 1%;
+}
+
+#event-place {
+  padding-bottom: 5%;
+}
+
+#calendar {
+  padding-bottom: 1%;
 }
 /*# sourceMappingURL=event.css.map */
