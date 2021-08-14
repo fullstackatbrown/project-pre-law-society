@@ -380,6 +380,8 @@
             position: relative;
             #banner-image {
                 width: 100%;
+				height: 250px;
+				object-fit: cover;
             }
             #banner-left-triangle {
                 color: black;
@@ -398,10 +400,12 @@
             background-color: black;
             color: white;
             width: 30%;
+			min-width: 250px;
             height: 250px;
             margin: auto;
             padding-top: 20px;
             padding-right: 20px;
+			padding-left: 5px;
 
             #banner-right-title {
                 font-weight: $font-bold;

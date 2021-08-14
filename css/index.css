@@ -120,6 +120,7 @@
 
 #recent-events-section #recent-events-desc {
   max-width: 70%;
+  min-width: 300px;
   font-weight: 450;
   line-height: 1.7rem;
   font-size: 1.5rem;
@@ -296,8 +297,8 @@
   display: -ms-grid;
   display: grid;
   padding: 0;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
 
