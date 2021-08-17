@@ -1,12 +1,13 @@
 #event-top-upper {
   margin-top: 25px;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 #event-top-upper #event-top-left {
-  width: 50%;
+  min-width: 50%;
   position: relative;
 }
 
@@ -19,7 +20,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
   height: 150px;
-  width: 60%;
   position: absolute;
   z-index: 10;
 }
@@ -31,7 +31,6 @@
 }
 
 #event-top-upper #event-top-left #left-triangle {
-  left: 60%;
   top: 0;
   color: black;
   position: absolute;
@@ -40,13 +39,29 @@
   z-index: 10;
 }
 
+@media (min-width: 1000px) {
+  #event-top-upper #event-top-left #event-title {
+    width: 60%;
+  }
+  #event-top-upper #event-top-left #left-triangle {
+    left: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #event-top-upper #event-top-left #event-title {
+    width: 100%;
+  }
+  #event-top-upper #event-top-left #left-triangle {
+    left: 100%;
+  }
+}
+
 #event-top-upper #event-see-more {
   position: relative;
   background-color: rgba(219, 220, 220, 0.5);
   color: black;
   margin-top: 150px;
-  width: 60%;
-  float: right;
   text-align: right;
   height: 150px;
   margin-top: 100px;
@@ -63,8 +78,20 @@
   border-left: 150px solid transparent;
 }
 
+@media (min-width: 1000px) {
+  #event-top-upper #event-see-more {
+    float: right;
+  }
+}
+
+@media (max-width: 1000px) {
+  #event-top-upper #event-see-more {
+    left: 100%;
+  }
+}
+
 #event-top-upper #event-top-right {
-  width: 50%;
+  max-width: 50%;
 }
 
 #event-top-upper #event-top-right #event-image {
@@ -73,26 +100,21 @@
   position: relative;
 }
 
-#event-top-right {
-  width: 50%;
-  background-color: green;
-}
-
-#information-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 1000px) {
+  #event-top-upper #event-top-right {
+    display: none;
+  }
 }
 
 #event-description-section {
-  width: 50%;
   padding-right: 10%;
   font-size: 0.9rem;
+  margin-bottom: 50px;
 }
 
 #event-time-and-place-section {
-  width: 50%;
   font-size: 0.8rem;
+  min-width: 50%;
 }
 
 #event-desc-text {
@@ -119,5 +141,9 @@
 
 #calendar {
   padding-bottom: 1%;
+}
+
+#event-map {
+  height: 500px;
 }
 /*# sourceMappingURL=event.css.map */

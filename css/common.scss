@@ -21,6 +21,10 @@ a:hover {
 	color: black;
 }
 
+.navbar {
+	z-index: 9999;
+}
+
 // NavBar
 .custom-navbar {
 	margin-top: 30px;
@@ -38,6 +42,7 @@ a:hover {
 a.navbar-brand {
 	padding-bottom: 0;
 	font-weight: 600;
+	z-index: 9999;
 }
 
 a.navbar-brand:hover {
@@ -94,6 +99,14 @@ a.nav-link:hover {
 	width: 100%;
 }
 
+@media only screen and (min-width: 1000px) {
+	.dynamic-flexbox-section {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+}
+
 
 .right-aligned {
 	float: right;
@@ -117,14 +130,35 @@ a.nav-link:hover {
 	margin-top: 100px;
 	width: 100%;
 	background-color: black;
-	height: 250px;
 	padding: 30px;
+	height: 500px;
+	
+	#footer-item {
+		color: white;
+		font-size: 12px;
+	}
+
+	#footer-title {
+		margin-bottom: 60px;
+	}
 
 	#footer-left {
 		width: auto;
 		color: white;
 		font-size: 24px;
 		font-weight: $font-bold;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#footer-bottom {
+		width: auto;
+		color: white;
+		font-size: 24px;
+		font-weight: $font-bold;
+		margin-top: 60px;
+		position: relative;
 	}
 
 	#footer-right {

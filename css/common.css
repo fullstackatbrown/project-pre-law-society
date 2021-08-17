@@ -20,7 +20,7 @@ a:hover {
 }
 
 .navbar {
-	z-index: 9999;
+  z-index: 9999;
 }
 
 .custom-navbar {
@@ -39,6 +39,7 @@ a:hover {
 a.navbar-brand {
   padding-bottom: 0;
   font-weight: 600;
+  z-index: 9999;
 }
 
 a.navbar-brand:hover {
@@ -98,16 +99,16 @@ a.nav-link:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
   .dynamic-flexbox-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
-  } 
+  }
 }
 
 .right-aligned {
@@ -135,8 +136,17 @@ a.nav-link:hover {
   margin-top: 100px;
   width: 100%;
   background-color: black;
-  height: 250px;
   padding: 30px;
+  height: 500px;
+}
+
+#footer #footer-item {
+  color: white;
+  font-size: 12px;
+}
+
+#footer #footer-title {
+  margin-bottom: 60px;
 }
 
 #footer #footer-left {
@@ -144,6 +154,25 @@ a.nav-link:hover {
   color: white;
   font-size: 24px;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer #footer-bottom {
+  width: auto;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 60px;
+  position: relative;
 }
 
 #footer #footer-right {
