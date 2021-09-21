@@ -1,10 +1,12 @@
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
 a:hover {
@@ -133,6 +135,7 @@ a.nav-link:hover {
 }
 
 #footer {
+  overflow-x: scroll;
   margin-top: 100px;
   width: 100%;
   background-color: black;

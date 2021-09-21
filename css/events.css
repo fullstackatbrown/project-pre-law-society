@@ -113,9 +113,14 @@
   }
 }
 
+#past-events-section {
+  padding-top: 20px;
+}
+
 #past-events-section #past-events-title {
   font-weight: 700;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 
 #past-events-section .grid-row {
@@ -370,10 +375,18 @@
   color: white;
 }
 
+#events-top-section {
+  position: relative;
+}
+
 #events-top-section #events-top-section-title {
   font-size: 1.5rem;
   font-weight: 700;
   padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+#events-top-section #events-top-section-banner {
   padding-bottom: 20px;
 }
 
@@ -438,6 +451,15 @@
   font-weight: 300;
   font-size: 0.75rem;
   text-align: right;
+}
+
+@media only screen and (max-width: 500px) {
+  #events-top-section #events-top-section-banner #banner-right {
+    min-width: 50%;
+  }
+  #events-top-section #events-top-section-banner #banner-right-desc {
+    display: none;
+  }
 }
 
 #events-top-section .resource-button4 {

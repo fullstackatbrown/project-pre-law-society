@@ -1,0 +1,223 @@
+@import "variables";
+
+#resources-top-section {
+    padding-top: 30px;
+	position: relative;
+    #resources-top-section-title {
+        font-size: 1.5rem;
+        font-weight: $font-bold;
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+
+    #resources-top-section-banner {
+		padding-bottom: 20px;
+        #banner-left {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            #banner-image {
+                width: 100%;
+				height: 250px;
+				object-fit: cover;
+            }
+            #banner-left-triangle {
+                color: black;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 250px solid black;
+                border-left: 100px solid transparent;
+            }
+        }
+
+        #banner-right {
+            background-color: black;
+            color: white;
+            width: 30%;
+			min-width: 250px;
+            height: 250px;
+            margin: auto;
+            padding-top: 20px;
+            padding-right: 20px;
+			padding-left: 5px;
+
+            #banner-right-title {
+                font-weight: $font-bold;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                text-align: right;
+            }
+
+            #banner-right-when {
+                font-weight: $font-thin;
+                font-size: 1.25rem;
+                text-align: right;
+            }
+
+            #banner-right-where {
+                font-weight: $font-thin;
+                margin-bottom: 15px;
+                font-size: 1.25rem;
+                text-align: right;
+            }
+
+            #banner-right-desc {
+                font-weight: $font-thin;
+                font-size: 0.75rem;
+                text-align: right;
+            }
+        }
+
+		@media only screen and (max-width: 500px) {
+			#banner-right {
+				min-width: 50%;
+			}
+			#banner-right-desc {
+				display: none;
+			}
+		}
+    }
+}
+
+.resources-mid-section {
+    .resources-mid-section-title {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: $font-bold;
+		font-size: 1.9rem;
+    }
+
+    .resources-mid-section-content {
+        .resources-mid-section-body {
+
+            .resources-mid-section-desc {
+                padding-bottom: 20px;
+            }
+
+            .resources-mid-section-links {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto; 
+                column-gap: 10px;
+                row-gap: 15px;
+            }
+        }
+
+        .resources-mid-section-image {
+            .resources-image {
+                width: 300px;
+                height: 200px;
+                object-fit: cover;
+                padding-bottom: 20px;
+                padding-right: 50px;
+
+
+            }
+            @media only screen and (max-width: 1000px) {
+                .resources-image {
+                    width: 100%;
+                    padding-right: 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+.connect-section-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: $font-bold;
+	font-size: 1.9rem;
+}
+
+#connect-section {
+    border: 1px solid black;
+    .connect-halve {
+        padding-top: 40px;
+        padding-bottom: 50px;
+
+        .connect-title {
+            font-weight: $font-bold;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .connect-body {
+            font-size: 1.25rem;
+            line-height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    #connect-left {
+        background-image: url("/images/law.jpg");
+        background-position: center;
+        color: white;
+        .arrow-link {
+            color: white;
+            span {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    width: 0;
+                    right: 0;
+                    height: 2px;
+                    display: block;
+                    background: white;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-out;
+                }
+                &:hover:after,
+                &:focus:after,
+                &:active:after {
+                    width: 100%;
+                }
+            }
+        }
+        padding-left: 2vw;
+        padding-right: 5vw;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 1);
+
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #connect-right {
+        background-image: url("/images/letter.jpg");
+        background-position: center;
+        padding-left: 2vw;
+        padding-right: 5vw;
+        box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 1);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+
+    }
+
+    #connect-right:hover {
+        box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
+    }
+
+    #connect-left:hover {
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #connect-left {
+            padding-left: 5vw;
+        }
+        #connect-right {
+            padding-left: 5vw;
+        }
+    }
+}

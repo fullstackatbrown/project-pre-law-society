@@ -28,9 +28,9 @@
 		height: max-content;
 		position: absolute;
 		background-color: rgba(219, 220, 220, 0.37);
-		padding-left: 30px;
+		padding-left: 5vw;
 		padding-top: 30px;
-		padding-right: 100px;
+		padding-right: 5vw;
 		padding-bottom: 30px;
 
 		#top-section-left-triangle {
@@ -44,7 +44,7 @@
 			border-left: 50px solid transparent;
 		}
 
-		#top-section-text {
+		#top-section-text, #top-section-text-mobile {
 			font-size: 1.8rem;
 			font-weight: 500;
 			line-height: 2.1rem;
@@ -53,6 +53,26 @@
 				text-decoration: underline;
 			}
 		}
+
+		@media only screen and (max-width: 500px) {
+			#top-section-text {
+				display: none
+			}
+			#top-section-text-mobile {
+				padding-top: 20px;
+				display: auto
+			}
+		}
+
+		@media only screen and (min-width: 500px) {
+			#top-section-text {
+				display: auto
+			}
+			#top-section-text-mobile {
+				display: none
+			}
+		}
+
 	}
 
 	#featured-event-section {
@@ -226,7 +246,7 @@
 }
 
 #leadership-section {
-	margin-top: 70px;
+	margin-top: 100px;
 	#leadership-section-title {
 		font-weight: $font-bold;
 		font-size: 1.9rem;
@@ -255,8 +275,16 @@
 		font-weight: 450;
 		line-height: 1.7rem;
 		font-size: 1.5rem;
+		padding-top: 10px;
 		padding-bottom: 10px;
 		font-family: 'Crimson Text', serif;
+	}
+
+
+	@media only screen and (max-width: 500px) {
+		#leadership-desc {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -285,6 +313,11 @@
 		width: 70%;
 		font-size: 1rem;
 		font-weight: $font-regular;
+	}
+	@media only screen and (max-width: 500px) {
+		#resources-left {
+			width: 100%;
+		}
 	}
 
 	#resources-divider {
